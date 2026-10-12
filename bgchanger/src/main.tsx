@@ -2,7 +2,9 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
-import PasswordGenerator from './PasswordGenerator/PasswordGenerator.tsx'
+import './App.css';
+import InputMain from './currencyConvertor/components/InputMain.tsx';
+
 // import ImageBand from './ImageBand/ImageBand.tsx'
 // import BgChanger from './BgChanger/BgChanger.tsx'
 
@@ -11,6 +13,7 @@ createRoot(document.getElementById('root')!).render(
     <App />
     {/* <ImageBand /> */}
     {/* <BgChanger/> */}
-    <PasswordGenerator/>
+    {/* <PasswordGenerator/> */}
+    <InputMain />
   </StrictMode>,
 )
