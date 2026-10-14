@@ -3,7 +3,9 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import './App.css';
-import InputMain from './currencyConvertor/components/InputMain.tsx';
+// import InputMain from './currencyConvertor/components/InputMain.tsx';
+import MainPage from './Haon/MainPage.tsx';
+import { BrowserRouter } from 'react-router/internal/react-server-client';
 
 // import ImageBand from './ImageBand/ImageBand.tsx'
 // import BgChanger from './BgChanger/BgChanger.tsx'
@@ -14,6 +16,9 @@ createRoot(document.getElementById('root')!).render(
     {/* <ImageBand /> */}
     {/* <BgChanger/> */}
     {/* <PasswordGenerator/> */}
-    <InputMain />
+    {/* <InputMain /> */}
+    <BrowserRouter>
+      <MainPage />  
+    </BrowserRouter>
   </StrictMode>,
 )
